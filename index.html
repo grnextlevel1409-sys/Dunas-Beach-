@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0B1F2A" />
+<title>Dunas Beach Club | Hospedagem em Jaguaruna - SC</title>
+<meta name="description" content="Dunas Beach Club em Balneário Campo Bom, Jaguaruna - SC. Conheça nossas acomodações e viva uma experiência especial perto da natureza." />
+<meta name="author" content="Dunas Beach Club" />
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Dunas Beach Club" />
+<meta property="og:title" content="Dunas Beach Club | Hospedagem em Jaguaruna - SC" />
+<meta property="og:description" content="Hospedagem premium para temporada em Balneário Campo Bom, Jaguaruna - SC. Conheça o Chalé e a Casa da Dunas Beach Club." />
+<meta property="og:image" content="images/chale-pool-sunset.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Dunas Beach Club | Hospedagem em Jaguaruna - SC" />
+<meta name="twitter:description" content="Hospedagem premium para temporada em Balneário Campo Bom, Jaguaruna - SC." />
+<meta name="twitter:image" content="images/chale-pool-sunset.jpg" />
+<link rel="icon" href="images/logo.jpg" />
+<link rel="apple-touch-icon" href="images/logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --sand-50:#FBF7F0; --sand-100:#F3EBDD; --sand-200:#E7D7C0; --dune-300:#D2BFA3;
+    --clay-500:#A67C52; --forest-600:#2F5D50; --sea-500:#2F7F8A; --deep:#0B1F2A;
+    --ink:#071319; --gold:#C8A96A; --ease:cubic-bezier(.22,1,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:'Manrope',system-ui,sans-serif;color:var(--deep);background:var(--sand-50);line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .display{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-.02em;line-height:1.03}
+  .container{width:100%;max-width:1280px;margin:0 auto;padding:0 20px}
+  @media(min-width:640px){.container{padding:0 32px}}
+  .section{padding:64px 0}
+  @media(min-width:1024px){.section{padding:112px 0}}
+  .eyebrow{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.28em;color:var(--sea-500)}
+  ::selection{background:rgba(47,127,138,.22);color:var(--ink)}
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:var(--sand-100)}
+  ::-webkit-scrollbar-thumb{background:var(--dune-300);border-radius:999px;border:2px solid var(--sand-100)}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+
+  /* Header */
+  .hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:background-color .5s var(--ease),box-shadow .5s var(--ease),backdrop-filter .5s var(--ease)}
+  .hdr-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  @media(min-width:1024px){.hdr-in{height:80px}}
+  .hdr.solid{background:rgba(251,247,240,.95);backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(11,31,42,.08);border-bottom:1px solid rgba(11,31,42,.08)}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:40px;width:40px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px rgba(255,255,255,.4)}
+  @media(min-width:1024px){.brand img{height:48px;width:48px}}
+  .brand .b1{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;letter-spacing:.14em;line-height:1;color:#fff;transition:color .5s}
+  .brand .b2{font-size:.6rem;font-weight:600;text-transform:uppercase;letter-spacing:.42em;color:rgba(255,255,255,.8);transition:color .5s}
+  .hdr.solid .brand img{box-shadow:0 0 0 1px rgba(11,31,42,.15)}
+  .hdr.solid .brand .b1{color:var(--deep)}
+  .hdr.solid .brand .b2{color:var(--sea-500)}
+  .nav{display:none;align-items:center;gap:32px}
+  @media(min-width:1024px){.nav{display:flex}}
+  .nav a{position:relative;font-size:.82rem;font-weight:500;letter-spacing:.02em;color:rgba(255,255,255,.9);transition:color .3s}
+  .nav a::after{content:"";position:absolute;left:0;bottom:-3px;height:1px;width:0;background:currentColor;transition:width .35s var(--ease)}
+  .nav a:hover::after{width:100%}
+  .hdr.solid .nav a{color:rgba(11,31,42,.85)}
+  .hdr.solid .nav a:hover{color:var(--deep)}
+  .actions{display:flex;align-items:center;gap:8px}
+  .btn-reserve{display:none;align-items:center;gap:8px;background:var(--deep);color:var(--sand-50);padding:10px 24px;border-radius:999px;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;box-shadow:0 10px 30px rgba(11,31,42,.18);transition:background .3s,box-shadow .3s}
+  .btn-reserve:hover{background:var(--ink);box-shadow:0 14px 40px rgba(11,31,42,.26)}
+  @media(min-width:1024px){.btn-reserve{display:inline-flex}}
+  .burger{display:inline-flex;height:44px;width:44px;align-items:center;justify-content:center;border-radius:50%;border:0;background:transparent;color:#fff;cursor:pointer;transition:color .3s,background .3s}
+  .hdr.solid .burger{color:var(--deep)}
+  @media(min-width:1024px){.burger{display:none}}
+  .drawer{display:none;background:var(--sand-50);border-top:1px solid rgba(11,31,42,.06);overflow:hidden;max-height:0;opacity:0;transition:max-height .5s var(--ease),opacity .5s var(--ease)}
+  .drawer.open{max-height:85vh;opacity:1}
+  @media(min-width:1024px){.drawer{display:none!important}}
+  .drawer nav{display:flex;flex-direction:column;padding:8px 0 16px}
+  .drawer nav a.mlink{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;color:var(--deep);padding:14px 0;border-bottom:1px solid rgba(11,31,42,.06)}
+  .drawer .mbtns{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+  .drawer .mbtns a{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 24px;border-radius:999px;font-size:.85rem;font-weight:600}
+  .mbtn-w{background:var(--deep);color:var(--sand-50);text-transform:uppercase;letter-spacing:.14em}
+  .mbtn-m{border:1px solid rgba(11,31,42,.16);color:var(--deep)}
+
+  /* Hero */
+  .hero{position:relative;display:flex;align-items:center;min-height:100svh;overflow:hidden}
+  .hero .bg{position:absolute;inset:0;animation:heroIn 1.8s var(--ease) both}
+  .hero .bg img{height:100%;width:100%;object-fit:cover}
+  .hero .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,19,25,.55),rgba(7,19,25,.18) 42%,rgba(7,19,25,.72))}
+  @keyframes heroIn{from{transform:scale(1.12);opacity:0}to{transform:scale(1);opacity:1}}
+  .hero-c{position:relative;z-index:2;width:100%;padding-top:96px}
+  .hero-c .inner{max-width:640px}
+  .hero .kick{color:rgba(255,255,255,.85);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.34em;margin-bottom:20px;animation:up .9s var(--ease) .2s both}
+  .hero h1{color:#fff;font-size:3.25rem}
+  .hero h1 .it{display:block;font-weight:300;font-style:italic;color:rgba(255,255,255,.95)}
+  @media(min-width:640px){.hero h1{font-size:4.5rem}}
+  @media(min-width:1024px){.hero h1{font-size:6.2rem}}
+  .hero h1{animation:up .9s var(--ease) .34s both}
+  .hero p.sub{margin-top:24px;max-width:560px;color:rgba(255,255,255,.9);font-weight:300;font-size:1.05rem;animation:up .9s var(--ease) .48s both}
+  @media(min-width:640px){.hero p.sub{font-size:1.15rem}}
+  .hero .ctas{margin-top:36px;display:flex;flex-direction:column;gap:12px;animation:up .9s var(--ease) .62s both}
+  @media(min-width:640px){.hero .ctas{flex-direction:row;align-items:center}}
+  .cta-ghost{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.6);background:rgba(255,255,255,.1);color:#fff;padding:16px 32px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;backdrop-filter:blur(4px);transition:background .3s}
+  .cta-ghost:hover{background:rgba(255,255,255,.2)}
+  .cta-solid{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--sand-50);color:var(--deep);padding:16px 32px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;box-shadow:0 14px 40px rgba(0,0,0,.28);transition:background .3s}
+  .cta-solid:hover{background:#fff}
+  @keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  .hero-bottom{position:absolute;left:0;right:0;bottom:0;z-index:2}
+  .hero-bottom .row{display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:28px}
+  .pin{display:none;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.2);color:rgba(255,255,255,.85);padding:8px 16px;border-radius:999px;font-size:.75rem;backdrop-filter:blur(6px)}
+  @media(min-width:640px){.pin{display:inline-flex}}
+  .explore{display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(255,255,255,.8);margin:0 auto;background:none;border:0;cursor:pointer}
+  @media(min-width:640px){.explore{margin:0}}
+  .explore span.t{font-size:.62rem;text-transform:uppercase;letter-spacing:.3em}
+  .explore .chev{animation:bounce 2s ease-in-out infinite}
+  @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+
+  /* Intro */
+  .sandwash{position:relative;overflow:hidden}
+  .sandwash::before{content:"";position:absolute;inset:0;background:radial-gradient(1200px 600px at 15% 8%,rgba(231,215,192,.5),rgba(251,247,240,0) 60%);pointer-events:none}
+  .grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center;position:relative}
+  @media(min-width:1024px){.grid{grid-template-columns:repeat(12,1fr);gap:64px}}
+  .col6{grid-column:auto}
+  @media(min-width:1024px){.col6{grid-column:span 6}}
+  h2.sec{font-size:2.25rem;color:var(--deep)}
+  @media(min-width:640px){h2.sec{font-size:3rem}}
+  @media(min-width:1024px){h2.sec{font-size:3.4rem}}
+  .rule{margin-top:24px;height:1px;width:64px;background:var(--gold)}
+  .lead{margin-top:28px;max-width:560px;color:rgba(11,31,42,.8);font-size:1.05rem}
+  .muted{margin-top:20px;max-width:560px;color:rgba(11,31,42,.7)}
+  .intro-media{position:relative}
+  .intro-media .main{border-radius:24px;overflow:hidden;box-shadow:0 24px 70px rgba(11,31,42,.14)}
+  .intro-media .main img{aspect-ratio:4/5;width:100%;object-fit:cover}
+  .intro-media .float{position:absolute;bottom:-32px;left:-24px;width:176px;border:4px solid var(--sand-50);border-radius:16px;overflow:hidden;box-shadow:0 18px 50px rgba(11,31,42,.18);display:none}
+  @media(min-width:640px){.intro-media .float{display:block}}
+  .intro-media .float img{aspect-ratio:1;width:100%;object-fit:cover}
+
+  /* Accommodations */
+  .acc-intro{text-align:center;padding-top:64px}
+  @media(min-width:640px){.acc-intro{padding-top:96px}}
+  .acc-intro h2{margin:0 auto;max-width:640px;font-size:2.25rem}
+  @media(min-width:640px){.acc-intro h2{font-size:3.75rem}}
+  .acc-intro p{margin:20px auto 0;max-width:560px;color:rgba(11,31,42,.7)}
+  .acc{}
+  .acc.dark{background:var(--deep)}
+  .acc.light{background:var(--sand-100)}
+  .acc .index{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300}
+  .acc.dark .index{color:rgba(255,255,255,.25)}
+  .acc.light .index{color:var(--dune-300)}
+  .acc.dark .eyebrow{color:var(--gold)}
+  .acc .title{margin-top:16px;font-size:2.25rem}
+  @media(min-width:640px){.acc .title{font-size:3rem}}
+  @media(min-width:1024px){.acc .title{font-size:3.4rem}}
+  .acc.dark .title,.acc.dark .p{color:#fff}
+  .acc.light .title{color:var(--deep)}
+  .acc .tag{margin-top:12px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.35rem}
+  .acc.dark .tag{color:rgba(255,255,255,.7)}
+  .acc.light .tag{color:var(--sea-500)}
+  .acc .p{margin-top:16px;max-width:560px}
+  .acc.dark .p{color:rgba(255,255,255,.8)}
+  .acc.light .p{color:rgba(11,31,42,.8)}
+  .pills{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+  .pills li{border-radius:999px;border:1px solid;padding:6px 16px;font-size:.78rem}
+  .acc.dark .pills li{border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.85)}
+  .acc.light .pills li{border-color:rgba(11,31,42,.14);color:rgba(11,31,42,.85)}
+  .cta-acc{margin-top:36px;display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;box-shadow:0 14px 40px rgba(11,31,42,.22);transition:background .3s,transform .3s}
+  .acc.dark .cta-acc{background:var(--sand-50);color:var(--deep)}
+  .acc.dark .cta-acc:hover{background:#fff}
+  .acc.light .cta-acc{background:var(--deep);color:var(--sand-50)}
+  .acc.light .cta-acc:hover{background:var(--ink)}
+
+  /* Carousel */
+  .carousel{position:relative;border-radius:24px;overflow:hidden;background:rgba(0,0,0,.1);box-shadow:0 24px 70px rgba(11,31,42,.22)}
+  .slides{position:relative;aspect-ratio:4/5}
+  @media(min-width:640px){.slides{aspect-ratio:4/4.4}}
+  .slide{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .slide.active{opacity:1;transform:scale(1)}
+  .c-btn{position:absolute;top:50%;transform:translateY(-50%);height:40px;width:40px;border:0;border-radius:50%;background:rgba(255,255,255,.82);color:var(--deep);display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(6px);transition:background .2s}
+  .c-btn:hover{background:#fff}
+  .c-prev{left:12px}.c-next{right:12px}
+  .dots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+  .dots button{height:6px;width:6px;border:0;border-radius:999px;background:rgba(255,255,255,.5);cursor:pointer;transition:width .3s,background .3s}
+  .dots button.active{width:24px;background:#fff}
+  .tag-amb{position:absolute;left:12px;top:12px;background:rgba(0,0,0,.45);color:rgba(255,255,255,.85);font-size:.6rem;text-transform:uppercase;letter-spacing:.05em;padding:4px 10px;border-radius:999px;backdrop-filter:blur(4px)}
+
+  /* Experience */
+  .exp-head{max-width:640px;margin:0 auto 48px;text-align:center}
+  @media(min-width:1024px){.exp-head{margin-bottom:64px}}
+  .exp-head h2{font-size:2.25rem}
+  @media(min-width:640px){.exp-head h2{font-size:3rem}}
+  @media(min-width:1024px){.exp-head h2{font-size:3.6rem}}
+  .exp-head p{margin-top:20px;color:rgba(11,31,42,.7)}
+  .exp-stack{display:grid;gap:20px}
+  @media(min-width:640px){.exp-stack{gap:24px}}
+  .exp-block{position:relative;border-radius:24px;overflow:hidden}
+  .exp-block img{height:62vh;min-height:380px;width:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+  @media(min-width:640px){.exp-block img{height:70vh}}
+  .exp-block .eg{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7),rgba(0,0,0,.15) 55%,rgba(0,0,0,.25))}
+  .exp-block .cap{position:absolute;inset:0;display:flex;align-items:flex-end;padding:24px}
+  @media(min-width:640px){.exp-block .cap{padding:40px}}
+  @media(min-width:1024px){.exp-block .cap{padding:56px}}
+  .exp-block.right .cap{justify-content:flex-end}
+  .cap .box{max-width:420px;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.25);backdrop-filter:blur(10px);border-radius:16px;padding:24px}
+  @media(min-width:640px){.cap .box{padding:32px}}
+  .cap .k{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.3em;color:var(--gold)}
+  .cap h3{margin-top:12px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.9rem;color:#fff}
+  @media(min-width:640px){.cap h3{font-size:2.25rem}}
+  .cap p{margin-top:12px;color:rgba(255,255,255,.85);font-size:.95rem}
+
+  /* Gallery */
+  .g-head{display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
+  @media(min-width:640px){.g-head{flex-direction:row;align-items:flex-end;justify-content:space-between;margin-bottom:48px}}
+  .g-head h2{font-size:2.25rem;color:var(--deep)}
+  @media(min-width:640px){.g-head h2{font-size:3rem}}
+  .g-head p{max-width:360px;color:rgba(11,31,42,.65);font-size:.9rem}
+  .masonry{display:grid;grid-auto-rows:180px;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media(min-width:640px){.masonry{grid-auto-rows:220px;gap:16px}}
+  @media(min-width:768px){.masonry{grid-template-columns:repeat(3,1fr)}}
+  @media(min-width:1024px){.masonry{grid-template-columns:repeat(4,1fr)}}
+  .tile{position:relative;display:block;height:100%;width:100%;border:0;padding:0;cursor:pointer;overflow:hidden;border-radius:16px;background:none}
+  .tile.tall{grid-row:span 2}
+  .tile img{height:100%;width:100%;object-fit:cover;transition:transform .7s var(--ease)}
+  .tile:hover img{transform:scale(1.06)}
+  .tile .ovh{position:absolute;inset:0;background:rgba(7,19,25,0);transition:background .5s;display:flex;align-items:center;justify-content:center}
+  .tile:hover .ovh{background:rgba(7,19,25,.25)}
+  .tile .zoom{height:44px;width:44px;border-radius:50%;background:rgba(255,255,255,.85);color:var(--deep);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .5s}
+  .tile:hover .zoom{opacity:1}
+
+  /* Lightbox */
+  .lb{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;background:rgba(7,19,25,.92);padding:16px}
+  .lb.open{display:flex}
+  .lb-close,.lb-nav{position:absolute;border:0;background:rgba(255,255,255,.1);color:#fff;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+  .lb-close:hover,.lb-nav:hover{background:rgba(255,255,255,.2)}
+  .lb-close{top:16px;right:16px;height:44px;width:44px}
+  .lb-nav{top:50%;transform:translateY(-50%);height:48px;width:48px}
+  .lb-prev{left:12px}.lb-next{right:12px}
+  @media(min-width:640px){.lb-prev{left:24px}.lb-next{right:24px}}
+  .lb figure{display:flex;flex-direction:column;align-items:center;max-width:1024px;max-height:85vh}
+  .lb img{max-height:78vh;width:auto;border-radius:16px;object-fit:contain;box-shadow:0 25px 50px rgba(0,0,0,.5)}
+  .lb figcaption{margin-top:16px;text-align:center;color:rgba(255,255,255,.7);font-size:.9rem;max-width:560px}
+  .lb figcaption .cnt{display:block;margin-top:4px;color:rgba(255,255,255,.4)}
+
+  /* Location */
+  .loc-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:stretch}
+  @media(min-width:1024px){.loc-grid{grid-template-columns:repeat(12,1fr);gap:48px}}
+  .loc-info{display:flex;flex-direction:column;justify-content:center}
+  @media(min-width:1024px){.loc-info{grid-column:span 5}.loc-map{grid-column:span 7}}
+  .loc-head h2{font-size:2.25rem;color:var(--deep)}
+  @media(min-width:640px){.loc-head h2{font-size:3rem}}
+  .addr-row{margin-top:32px;display:flex;gap:16px;align-items:flex-start}
+  .addr-ic{margin-top:2px;height:44px;width:44px;flex:0 0 auto;border-radius:50%;background:var(--sand-200);color:var(--forest-600);display:flex;align-items:center;justify-content:center}
+  address{font-style:normal;line-height:1.6;color:rgba(11,31,42,.85)}
+  address .s{display:block;font-weight:600;color:var(--deep)}
+  .loc-btns{margin-top:32px;display:flex;flex-direction:column;gap:12px}
+  @media(min-width:640px){.loc-btns{flex-direction:row}}
+  .lb-solid{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--deep);color:var(--sand-50);padding:14px 28px;border-radius:999px;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;transition:background .3s}
+  .lb-solid:hover{background:var(--ink)}
+  .lb-ghost{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid rgba(11,31,42,.16);color:var(--deep);padding:14px 28px;border-radius:999px;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;cursor:pointer;background:none;transition:background .3s}
+  .lb-ghost:hover{background:var(--sand-100)}
+  .map-wrap{overflow:hidden;border-radius:24px;border:1px solid rgba(11,31,42,.1);box-shadow:0 24px 70px rgba(11,31,42,.14)}
+  .map-wrap iframe{width:100%;aspect-ratio:16/12;border:0;display:block}
+  @media(min-width:640px){.map-wrap iframe{aspect-ratio:16/10}}
+
+  /* Reservas */
+  .res{position:relative;overflow:hidden}
+  .res img.bg{position:absolute;inset:0;height:100%;width:100%;object-fit:cover}
+  .res .ro{position:absolute;inset:0;background:rgba(7,19,25,.78)}
+  .res-c{position:relative;z-index:2;text-align:center;padding:96px 0}
+  @media(min-width:640px){.res-c{padding:128px 0}}
+  .res-c h2{margin:0 auto;max-width:768px;color:#fff;font-size:2.25rem}
+  @media(min-width:640px){.res-c h2{font-size:3.75rem}}
+  .res-c p.s{margin:24px auto 0;max-width:560px;color:rgba(255,255,255,.85);font-size:1.05rem}
+  @media(min-width:640px){.res-c p.s{font-size:1.15rem}}
+  .res-cta{margin-top:40px;display:inline-flex;align-items:center;gap:12px;background:var(--sand-50);color:var(--deep);padding:20px 40px;border-radius:999px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;box-shadow:0 18px 50px rgba(0,0,0,.35);transition:background .3s,transform .3s}
+  .res-cta:hover{background:#fff;transform:scale(1.02)}
+  .res-c p.small{margin:24px auto 0;max-width:440px;color:rgba(255,255,255,.6);font-size:.78rem}
+
+  /* Instagram */
+  .ig{background:var(--sand-100)}
+  .ig-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+  @media(min-width:1024px){.ig-grid{grid-template-columns:repeat(12,1fr)}}
+  @media(min-width:1024px){.ig-info{grid-column:span 5}.ig-thumbs{grid-column:span 7}}
+  .ig-info h2{font-size:2.25rem;color:var(--deep)}
+  @media(min-width:640px){.ig-info h2{font-size:3rem}}
+  .ig-info p{margin-top:20px;max-width:440px;color:rgba(11,31,42,.7)}
+  .ig-btn{margin-top:28px;display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(11,31,42,.16);padding:14px 28px;border-radius:999px;font-size:.82rem;font-weight:600;color:var(--deep);transition:background .3s,color .3s}
+  .ig-btn:hover{background:var(--deep);color:var(--sand-50)}
+  .thumbs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media(min-width:640px){.thumbs{grid-template-columns:repeat(4,1fr);gap:16px}}
+  .thumb{position:relative;aspect-ratio:1;overflow:hidden;border-radius:16px;display:block}
+  .thumb img{height:100%;width:100%;object-fit:cover;transition:transform .7s var(--ease)}
+  .thumb:hover img{transform:scale(1.1)}
+  .thumb .to{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(7,19,25,0);transition:background .5s}
+  .thumb:hover .to{background:rgba(7,19,25,.35)}
+  .thumb .to svg{color:#fff;opacity:0;transition:opacity .5s}
+  .thumb:hover .to svg{opacity:1}
+
+  /* Footer */
+  footer{background:var(--deep);color:var(--sand-50)}
+  .f-in{padding:64px 0}
+  @media(min-width:1024px){.f-in{padding:80px 0}}
+  .f-grid{display:grid;grid-template-columns:1fr;gap:48px}
+  @media(min-width:768px){.f-grid{grid-template-columns:repeat(12,1fr)}}
+  @media(min-width:768px){.f-brand{grid-column:span 5}.f-nav{grid-column:span 3}.f-ct{grid-column:span 4}}
+  .f-brand .tag{margin-top:24px;max-width:360px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;line-height:1.3;color:rgba(255,255,255,.85)}
+  .f-addr{margin-top:24px;display:flex;gap:12px;color:rgba(255,255,255,.7);font-size:.9rem}
+  .f-h{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.24em;color:rgba(255,255,255,.5)}
+  .f-nav ul{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:12px}
+  .f-nav a{font-size:.9rem;color:rgba(255,255,255,.8);transition:color .2s}
+  .f-nav a:hover{color:#fff}
+  .f-ct .list{margin-top:20px;display:flex;flex-direction:column;gap:12px}
+  .f-ct a{display:inline-flex;align-items:center;gap:10px;font-size:.9rem;color:rgba(255,255,255,.85);transition:color .2s}
+  .f-ct a:hover{color:#fff}
+  .f-ct .ic{height:36px;width:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .f-bottom{margin-top:56px;border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;flex-direction:column;gap:12px;color:rgba(255,255,255,.5);font-size:.78rem}
+  @media(min-width:640px){.f-bottom{flex-direction:row;align-items:center;justify-content:space-between}}
+
+  /* Float WhatsApp */
+  .fab{position:fixed;bottom:20px;right:20px;z-index:40;height:56px;width:56px;border-radius:50%;background:#25D366;color:#fff;display:none;align-items:center;justify-content:center;box-shadow:0 12px 34px rgba(37,211,102,.5);transition:transform .3s}
+  .fab.show{display:flex}
+  .fab:hover{transform:scale(1.05)}
+  .fab .ping{position:absolute;inset:0;border-radius:50%;background:#25D366;opacity:.2;animation:ping 1.6s cubic-bezier(0,0,.2,1) infinite}
+  @keyframes ping{75%,100%{transform:scale(1.7);opacity:0}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="container">
+    <div class="hdr-in">
+      <a href="#inicio" class="brand">
+        <img src="images/logo.jpg" alt="Logo Dunas Beach Club" />
+        <span><span class="b1">DUNAS</span><span class="b2">Beach Club</span></span>
+      </a>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#chale">O Chalé</a>
+        <a href="#casa">A Casa</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="actions">
+        <a class="btn-reserve" data-wa="general" target="_blank" rel="noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Reservar
+        </a>
+        <button class="burger" id="burger" aria-label="Abrir menu">
+          <svg id="ic-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg id="ic-close" style="display:none" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="drawer" id="drawer">
+    <div class="container">
+      <nav>
+        <a class="mlink" href="#inicio">Início</a>
+        <a class="mlink" href="#chale">O Chalé</a>
+        <a class="mlink" href="#casa">A Casa</a>
+        <a class="mlink" href="#experiencia">Experiência</a>
+        <a class="mlink" href="#galeria">Galeria</a>
+        <a class="mlink" href="#localizacao">Localização</a>
+        <a class="mlink" href="#contato">Contato</a>
+        <div class="mbtns">
+          <a class="mbtn-w" data-wa="general" target="_blank" rel="noreferrer">Reservar pelo WhatsApp</a>
+          <a class="mbtn-m" href="https://maps.app.goo.gl/CVzXj1s7ur59tJa9A?g_st=ac" target="_blank" rel="noreferrer">Ver localização</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="bg"><img src="images/chale-pool-sunset.jpg" alt="Área da piscina da Dunas Beach Club ao pôr do sol, com os chalés A-frame ao fundo em Balneário Campo Bom" /><div class="ov"></div></div>
+  <div class="hero-c container">
+    <div class="inner">
+      <p class="kick">Balneário Campo Bom • Jaguaruna — SC</p>
+      <h1 class="display">Dunas<span class="it">Beach Club</span></h1>
+      <p class="sub">Uma experiência única em meio à natureza de Jaguaruna — hospedagem para temporada entre dunas, mar e arquitetura contemporânea.</p>
+      <div class="ctas">
+        <a class="cta-ghost" href="#chale">Conheça as acomodações</a>
+        <a class="cta-solid" data-wa="general" target="_blank" rel="noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Reservar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <div class="container"><div class="row">
+      <a class="pin" href="https://maps.app.goo.gl/CVzXj1s7ur59tJa9A?g_st=ac" target="_blank" rel="noreferrer">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Rua da Saudade — Jaguaruna, SC
+      </a>
+      <button class="explore" onclick="document.getElementById('introducao').scrollIntoView()">
+        <span class="t">Explorar</span>
+        <span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+      </button>
+    </div></div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section sandwash" id="introducao">
+  <div class="container">
+    <div class="grid">
+      <div class="col6">
+        <p class="eyebrow reveal" style="margin-bottom:20px">Bem-vindo</p>
+        <h2 class="sec display reveal">Seu refúgio em Jaguaruna.</h2>
+        <div class="rule reveal"></div>
+        <p class="lead reveal">Um espaço pensado para quem busca dias de descanso, conforto e conexão com a natureza em Balneário Campo Bom.</p>
+        <p class="muted reveal">Entre a luz do fim de tarde, o silêncio das dunas e a arquitetura contemporânea, a Dunas Beach Club é um convite para desacelerar e viver o verão com calma.</p>
+      </div>
+      <div class="col6">
+        <div class="intro-media reveal">
+          <div class="main"><img src="images/chale-pool-sunset.jpg" alt="Área da piscina da Dunas Beach Club ao entardecer" loading="lazy" /></div>
+          <div class="float"><img src="https://images.pexels.com/photos/37270326/pexels-photo-37270326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200" alt="Dunas e vegetação natural da região de Jaguaruna" loading="lazy" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACOMODAÇÕES INTRO -->
+<div style="background:var(--sand-100)">
+  <div class="container acc-intro">
+    <p class="eyebrow reveal" style="margin-bottom:16px">Acomodações</p>
+    <h2 class="display reveal">Escolha sua experiência.</h2>
+    <p class="reveal">Duas acomodações independentes, cada uma com sua personalidade — escolha a que combina com a sua estadia.</p>
+  </div>
+</div>
+
+<!-- O CHALÉ -->
+<section class="acc dark section" id="chale">
+  <div class="container">
+    <div class="grid">
+      <div class="col6" style="order:1">
+        <div class="carousel reveal" data-carousel>
+          <div class="slides">
+            <img class="slide active" src="images/chale-front.jpg" alt="Chalé A-frame da Dunas Beach Club com fachada em ripado escuro e amplo vidro frontal" />
+            <img class="slide" src="images/chale-pool-sunset.jpg" alt="Chalés A-frame da Dunas Beach Club ao entardecer, vistos a partir da área da piscina" />
+            <img class="slide" data-amb src="https://images.pexels.com/photos/37270326/pexels-photo-37270326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200" alt="Dunas e vegetação natural da região de Jaguaruna" />
+          </div>
+          <button class="c-btn c-prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="c-btn c-next" aria-label="Próxima"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="dots"></div>
+          <span class="tag-amb" data-amb-label style="display:none">Ambiente</span>
+        </div>
+      </div>
+      <div class="col6" style="order:2">
+        <div style="display:flex;align-items:center;gap:12px" class="reveal"><span class="index">01</span><p class="eyebrow">A Acomodação</p></div>
+        <h2 class="title display reveal">O Chalé</h2>
+        <p class="tag reveal">Arquitetura A-frame</p>
+        <p class="p reveal">Uma acomodação de arquitetura A-frame, cercada por um ambiente que combina personalidade, conforto e contato com a natureza.</p>
+        <p class="p reveal">Linhas marcantes, madeira e grandes vidros que trazem a luz e a paisagem para dentro — um refúgio contemporâneo para desacelerar.</p>
+        <ul class="pills reveal"><li>Arquitetura A-frame</li><li>Design contemporâneo</li><li>Integrado à natureza</li><li>Ambiente aconchegante</li></ul>
+        <a class="cta-acc reveal" data-wa="chale" target="_blank" rel="noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Conhecer o Chalé
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- A CASA -->
+<section class="acc light section" id="casa">
+  <div class="container">
+    <div class="grid">
+      <div class="col6" style="order:2">
+        <div class="carousel reveal" data-carousel>
+          <div class="slides">
+            <img class="slide active" src="images/casa-exterior.jpg" alt="Fachada da Casa da Dunas Beach Club, dois andares em revestimento branco com detalhes em madeira escura e varanda" />
+            <img class="slide" src="images/casa-pool.jpg" alt="Casa da Dunas Beach Club vista da área externa com piscina e palmeiras" />
+            <img class="slide" data-amb src="https://images.pexels.com/photos/38856477/pexels-photo-38856477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200" alt="Paisagem natural litorânea da região" />
+          </div>
+          <button class="c-btn c-prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="c-btn c-next" aria-label="Próxima"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="dots"></div>
+          <span class="tag-amb" data-amb-label style="display:none">Ambiente</span>
+        </div>
+      </div>
+      <div class="col6" style="order:1">
+        <div style="display:flex;align-items:center;gap:12px" class="reveal"><span class="index">02</span><p class="eyebrow">A Acomodação</p></div>
+        <h2 class="title display reveal">A Casa</h2>
+        <p class="tag reveal">Fachada branca e madeira</p>
+        <p class="p reveal">Um espaço pensado para proporcionar uma estadia confortável e tranquila em Balneário Campo Bom.</p>
+        <p class="p reveal">Casa independente de dois pavimentos, com fachada branca e detalhes em madeira escura, varanda e uma estética moderna e acolhedora.</p>
+        <ul class="pills reveal"><li>Casa independente</li><li>Dois pavimentos</li><li>Varanda ampla</li><li>Estética moderna</li></ul>
+        <a class="cta-acc reveal" data-wa="casa" target="_blank" rel="noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Conhecer a Casa
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section class="section" id="experiencia">
+  <div class="container">
+    <div class="exp-head">
+      <p class="eyebrow reveal" style="margin-bottom:16px">A experiência</p>
+      <h2 class="display reveal">Mais do que uma hospedagem.</h2>
+      <p class="reveal">Estar na Dunas Beach Club é sobre descanso, natureza e tempo de qualidade — dias tranquilos perto da praia, em Jaguaruna.</p>
+    </div>
+    <div class="exp-stack">
+      <div class="exp-block left reveal">
+        <img src="images/chale-pool-sunset.jpg" alt="Dias que pedem calma" loading="lazy" />
+        <div class="eg"></div>
+        <div class="cap"><div class="box"><p class="k">Descanso</p><h3>Dias que pedem calma</h3><p>Manhãs sem pressa, tardes longas e o tempo passando no seu ritmo — do jeito que umas boas férias deveriam ser.</p></div></div>
+      </div>
+      <div class="exp-block right reveal">
+        <img src="https://images.pexels.com/photos/37270326/pexels-photo-37270326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200" alt="Entre dunas e vegetação" loading="lazy" />
+        <div class="eg"></div>
+        <div class="cap"><div class="box"><p class="k">Natureza</p><h3>Entre dunas e vegetação</h3><p>A paisagem natural de Balneário Campo Bom emoldura a estadia e traz o silêncio e a leveza de estar perto do mar.</p></div></div>
+      </div>
+      <div class="exp-block left reveal">
+        <img src="https://images.pexels.com/photos/38856477/pexels-photo-38856477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200" alt="Espaço para respirar" loading="lazy" />
+        <div class="eg"></div>
+        <div class="cap"><div class="box"><p class="k">Liberdade</p><h3>Espaço para respirar</h3><p>Um lugar para reencontrar quem você gosta, celebrar dias especiais e simplesmente aproveitar o verão com calma.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="section" id="galeria" style="background:var(--sand-100)">
+  <div class="container">
+    <div class="g-head">
+      <div>
+        <p class="eyebrow reveal" style="margin-bottom:16px">Galeria</p>
+        <h2 class="display reveal">Momentos na Dunas</h2>
+      </div>
+      <p class="reveal">Toque em qualquer imagem para ampliar e navegar pela galeria completa.</p>
+    </div>
+    <div class="masonry" id="masonry">
+      <button class="tile tall reveal" data-lb><img src="images/chale-pool-sunset.jpg" alt="Área da piscina da Dunas Beach Club ao pôr do sol com os chalés A-frame ao fundo" loading="lazy"><span class="ovh"><span class="zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span></span></button>
+      <button class="tile tall reveal" data-lb><img src="images/chale-front.jpg" alt="Chalé A-frame com estrutura escura e grande vidro frontal" loading="lazy"><span class="ovh"><span class="zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span></span></button>
+      <button class="tile tall reveal" data-lb><img src="images/casa-exterior.jpg" alt="Casa de dois andares em revestimento branco com detalhes em madeira" loading="lazy"><span class="ovh"><span class="zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span></span></button>
+      <button class="tile reveal" data-lb><img src="images/casa-pool.jpg" alt="Piscina e área de convivência com a casa ao fundo" loading="lazy"><span class="ovh"><span class="zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span></span></button>
+      <button class="tile reveal" data-lb><img src="https://images.pexels.com/photos/37270326/pexels-photo-37270326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200" alt="Dunas e vegetação da região de Jaguaruna" loading="lazy"><span class="ovh"><span class="zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span></span></button>
+      <button class="tile reveal" data-lb><img src="https://images.unsplash.com/photo-1651936238064-f19249cd873f?auto=format&fit=crop&w=1200&q=70" alt="Detalhe natural de madeira e luz suave" loading="lazy"><span class="ovh"><span class="zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span></span></button>
+      <button class="tile reveal" data-lb><img src="https://images.pexels.com/photos/38856477/pexels-photo-38856477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200" alt="Vegetação litorânea natural" loading="lazy"><span class="ovh"><span class="zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span></span></button>
+      <button class="tile reveal" data-lb><img src="https://images.unsplash.com/photo-1643254723780-664a36c3a86c?auto=format&fit=crop&w=1200&q=70" alt="Detalhe têxtil em tons neutros e naturais" loading="lazy"><span class="ovh"><span class="zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="section" id="localizacao">
+  <div class="container">
+    <div class="loc-grid">
+      <div class="loc-info">
+        <div class="loc-head">
+          <p class="eyebrow reveal" style="margin-bottom:16px">Localização</p>
+          <h2 class="display reveal">Encontre a Dunas Beach Club</h2>
+        </div>
+        <div class="addr-row reveal">
+          <span class="addr-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <address><span class="s">Rua da Saudade</span>Balneário Campo Bom<br/>Jaguaruna - SC<br/>88715-000 — Brasil</address>
+        </div>
+        <div class="loc-btns reveal">
+          <a class="lb-solid" href="https://maps.app.goo.gl/CVzXj1s7ur59tJa9A?g_st=ac" target="_blank" rel="noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            Ver no Google Maps
+          </a>
+          <button class="lb-ghost" id="copyAddr">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+            <span id="copyTxt">Copiar endereço</span>
+          </button>
+        </div>
+      </div>
+      <div class="loc-map">
+        <div class="map-wrap reveal">
+          <iframe title="Mapa da Dunas Beach Club" src="https://www.google.com/maps?q=Rua%20da%20Saudade%2C%20Balne%C3%A1rio%20Campo%20Bom%2C%20Jaguaruna%20-%20SC%2C%2088715-000%2C%20Brasil&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section class="res" id="reservas">
+  <img class="bg" src="images/chale-pool-sunset.jpg" alt="Área externa da Dunas Beach Club ao entardecer" loading="lazy" />
+  <div class="ro"></div>
+  <div class="container res-c">
+    <p class="eyebrow reveal" style="color:var(--gold);margin-bottom:20px">Reservas</p>
+    <h2 class="display reveal">Seu próximo refúgio começa aqui.</h2>
+    <p class="s reveal">Entre em contato com a Dunas Beach Club e consulte a disponibilidade para sua estadia.</p>
+    <a class="res-cta reveal" data-wa="general" target="_blank" rel="noreferrer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Reservar pelo WhatsApp
+    </a>
+    <p class="small reveal">Ao tocar, abriremos uma conversa no WhatsApp com uma mensagem pronta para você enviar.</p>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="section ig">
+  <div class="container">
+    <div class="ig-grid">
+      <div class="ig-info">
+        <p class="eyebrow reveal" style="margin-bottom:16px">Instagram</p>
+        <h2 class="display reveal">Siga a Dunas Beach Club</h2>
+        <p class="reveal">Acompanhe os bastidores, novidades e a rotina do nosso cantinho à beira-mar.</p>
+        <a class="ig-btn reveal" href="https://www.instagram.com/dunasbeachclub?stkn=MXdxa3dzcXJrMDJiaw==" target="_blank" rel="noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+          @dunasbeachclub
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+      <div class="ig-thumbs">
+        <div class="thumbs">
+          <a class="thumb reveal" href="https://www.instagram.com/dunasbeachclub?stkn=MXdxa3dzcXJrMDJiaw==" target="_blank" rel="noreferrer"><img src="images/chale-pool-sunset.jpg" alt="Piscina ao pôr do sol na Dunas Beach Club" loading="lazy"><span class="to"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span></a>
+          <a class="thumb reveal" href="https://www.instagram.com/dunasbeachclub?stkn=MXdxa3dzcXJrMDJiaw==" target="_blank" rel="noreferrer"><img src="images/chale-front.jpg" alt="Chalé A-frame da Dunas Beach Club" loading="lazy"><span class="to"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span></a>
+          <a class="thumb reveal" href="https://www.instagram.com/dunasbeachclub?stkn=MXdxa3dzcXJrMDJiaw==" target="_blank" rel="noreferrer"><img src="images/casa-exterior.jpg" alt="Casa da Dunas Beach Club" loading="lazy"><span class="to"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span></a>
+          <a class="thumb reveal" href="https://www.instagram.com/dunasbeachclub?stkn=MXdxa3dzcXJrMDJiaw==" target="_blank" rel="noreferrer"><img src="images/casa-pool.jpg" alt="Área da piscina com a casa ao fundo" loading="lazy"><span class="to"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contato">
+  <div class="container f-in">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a href="#inicio" class="brand"><img src="images/logo.jpg" alt="Logo Dunas Beach Club" style="box-shadow:0 0 0 1px rgba(255,255,255,.2)"><span><span class="b1" style="color:#fff">DUNAS</span><span class="b2" style="color:var(--gold)">Beach Club</span></span></a>
+        <p class="tag">Uma experiência para viver com calma.</p>
+        <div class="f-addr">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-top:2px;flex:0 0 auto"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Rua da Saudade, Balneário Campo Bom<br/>Jaguaruna - SC — 88715-000</p>
+        </div>
+      </div>
+      <div class="f-nav">
+        <h3 class="f-h">Navegação</h3>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#chale">O Chalé</a></li>
+          <li><a href="#casa">A Casa</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
+      <div class="f-ct">
+        <h3 class="f-h">Contato</h3>
+        <div class="list">
+          <a data-wa="general" target="_blank" rel="noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>+55 48 9108-2322</a>
+          <a href="https://www.instagram.com/dunasbeachclub?stkn=MXdxa3dzcXJrMDJiaw==" target="_blank" rel="noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span>@dunasbeachclub</a>
+          <a href="https://maps.app.goo.gl/CVzXj1s7ur59tJa9A?g_st=ac" target="_blank" rel="noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Ver no Google Maps</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <p>© <span id="yr"></span> Dunas Beach Club — Jaguaruna, SC. Todos os direitos reservados.</p>
+      <p>Balneário Campo Bom • Jaguaruna — SC</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="fab" id="fab" data-wa="general" target="_blank" rel="noreferrer" aria-label="Reservar pelo WhatsApp">
+  <span class="ping"></span>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb">
+  <button class="lb-close" id="lbClose" aria-label="Fechar"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Próxima"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+  <figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+
+<script>
+(function(){
+  var PHONE="554891082322";
+  var MSGS={
+    general:"Olá! Gostaria de saber mais sobre a disponibilidade e fazer uma reserva na Dunas Beach Club.",
+    chale:"Olá! Tenho interesse em reservar O Chalé (A-frame) na Dunas Beach Club. Poderia me informar a disponibilidade?",
+    casa:"Olá! Tenho interesse em reservar A Casa na Dunas Beach Club. Poderia me informar a disponibilidade?"
+  };
+  // Build WhatsApp links
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    var k=a.getAttribute('data-wa');
+    a.setAttribute('href','https://wa.me/'+PHONE+'?text='+encodeURIComponent(MSGS[k]||MSGS.general));
+  });
+
+  // Year
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // Header solid on scroll
+  var hdr=document.getElementById('hdr');
+  function onScroll(){
+    if(window.scrollY>70) hdr.classList.add('solid'); else hdr.classList.remove('solid');
+    var fab=document.getElementById('fab');
+    if(window.scrollY>600) fab.classList.add('show'); else fab.classList.remove('show');
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // Mobile menu
+  var burger=document.getElementById('burger'),drawer=document.getElementById('drawer');
+  var icM=document.getElementById('ic-menu'),icC=document.getElementById('ic-close');
+  function toggle(open){
+    drawer.classList.toggle('open',open);
+    icM.style.display=open?'none':'block'; icC.style.display=open?'block':'none';
+    document.body.style.overflow=open?'hidden':'';
+  }
+  burger.addEventListener('click',function(){toggle(!drawer.classList.contains('open'));});
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){toggle(false);});});
+
+  // Carousels
+  document.querySelectorAll('[data-carousel]').forEach(function(car){
+    var slides=[].slice.call(car.querySelectorAll('.slide'));
+    var dotsWrap=car.querySelector('.dots');
+    var ambLabel=car.querySelector('[data-amb-label]');
+    var i=0;
+    slides.forEach(function(_,idx){
+      var b=document.createElement('button'); if(idx===0)b.classList.add('active');
+      b.setAttribute('aria-label','Ir para imagem '+(idx+1));
+      b.addEventListener('click',function(){go(idx);});
+      dotsWrap.appendChild(b);
+    });
+    var dots=[].slice.call(dotsWrap.children);
+    function go(n){
+      i=(n+slides.length)%slides.length;
+      slides.forEach(function(s,idx){s.classList.toggle('active',idx===i);});
+      dots.forEach(function(d,idx){d.classList.toggle('active',idx===i);});
+      if(ambLabel) ambLabel.style.display=slides[i].hasAttribute('data-amb')?'inline-block':'none';
+    }
+    car.querySelector('.c-prev').addEventListener('click',function(){go(i-1);});
+    car.querySelector('.c-next').addEventListener('click',function(){go(i+1);});
+  });
+
+  // Reveal on scroll
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  // Lightbox
+  var tiles=[].slice.call(document.querySelectorAll('[data-lb]'));
+  var items=tiles.map(function(t){var im=t.querySelector('img');return {src:im.getAttribute('src'),alt:im.getAttribute('alt')};});
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+  var idx=0;
+  function open(n){idx=(n+items.length)%items.length;lbImg.src=items[idx].src;lbImg.alt=items[idx].alt;lbCap.innerHTML=items[idx].alt+'<span class="cnt">'+(idx+1)+' / '+items.length+'</span>';lb.classList.add('open');document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';}
+  tiles.forEach(function(t,n){t.addEventListener('click',function(){open(n);});});
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbPrev').addEventListener('click',function(){open(idx-1);});
+  document.getElementById('lbNext').addEventListener('click',function(){open(idx+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowRight')open(idx+1);if(e.key==='ArrowLeft')open(idx-1);});
+
+  // Copy address
+  var copyBtn=document.getElementById('copyAddr'),copyTxt=document.getElementById('copyTxt');
+  copyBtn.addEventListener('click',function(){
+    var addr="Rua da Saudade, Balneário Campo Bom, Jaguaruna - SC, 88715-000, Brasil";
+    navigator.clipboard.writeText(addr).then(function(){copyTxt.textContent='Copiado!';setTimeout(function(){copyTxt.textContent='Copiar endereço';},2200);}).catch(function(){});
+  });
+})();
+</script>
+</body>
+</html>
